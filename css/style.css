@@ -13,3 +13,40 @@ body {
     box-sizing: border-box;
     background-color: white;
 }
+
+.modak-regular {
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    position: relative;
+    font-size: 100px;
+    height: 100vh;
+}
+
+div .upper-text {
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    font-family: "Modak";
+}
+
+div .bottom-text {
+    z-index: 3;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    font-family: "Modak";
+}
+
+canvas {
+    position: absolute;
+    z-index: 2;
+    margin: 0;
+    bottom: 0;
+    height: calc(100vh - 30px);
+    width: auto;
+}
