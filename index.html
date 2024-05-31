@@ -10,9 +10,37 @@
     </head>
     <body>
         <div class="container">
-            <div class="upper-text">I'm just trying to</div>
-            <div class="bottom-text">remember what you said</div>
+            <div class="left-text">
+                <div class="left-upper">I'm just trying to</div>
+                <div class="left-bottom">remember what you said</div>
+            </div>
             <canvas id="canvas" width="600" height="600"></canvas>
+        </div>
+        <div class="msg-container">
+            <div class="msg-title">Guest Book</div>
+            <div class="msgs-wrapper">
+                <div class="msg-item">
+                    길이가 다른
+                    <button class="delete-btn">X</button>
+                    <div class="msg-datetime">2024-05-31 12-27-30</div>
+                </div>
+                <div class="msg-item">
+                    다양한 종류의 컨테이너들
+                    <button class="delete-btn">X</button>
+                    <div class="msg-datetime">2024-05-31 12-27-30</div>
+                </div>
+                <div class="msg-item">
+                    123
+                    <button class="delete-btn">X</button>
+                    <div class="msg-datetime">2024-05-31 12-27-30</div>
+                </div>
+                <div class="msg-item">
+                    1234567890
+                    <button class="delete-btn">X</button>
+                    <div class="msg-datetime">2024-05-31 12-27-30</div>
+                </div>
+            </div>
+            <input type="text" class="msg-input" placeholder="Add new message">
         </div>
         <script type="importmap">
             {
