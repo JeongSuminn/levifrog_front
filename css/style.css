@@ -14,35 +14,57 @@ body {
     background-color: white;
 }
 
-.modak-regular {
-    font-family: "Modak", system-ui;
+.bowlby-one-sc-regular {
+    font-family: "Bowlby One SC", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.link:hover { 
+    cursor : url(cursor.png) 20 30, url(cursor2.png) 20 30, auto; 
 }
 
 .container {
     position: relative;
-    font-size: 40px;
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
 }
 
 .left-text {
-    font-family: "Modak";
+    font-family: "Bowlby One SC";
+    font-size: 90px;
 }
 
 .left-text .left-upper {
     position: absolute;
     z-index: 1;   
     top: 30px;
-    left: 30px;
+    padding-left: 20px;
+    background-color: rgba(255, 255, 0, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    width: 100vw;
 }
 
 .left-text .left-bottom {
     position: absolute;
     z-index: 3;
     bottom: 30px;
-    right: 30px;
+    padding-right: 20px;
+    background-color: rgba(255, 255, 0, 0.7);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    text-align: right;
+    width: 100vw;
+    
 }
 
 canvas {
@@ -56,20 +78,22 @@ canvas {
 
 .msg-container {
     position: absolute;
-    top: 20vh;
+    top: 17vh;
     right: 10vw;
-    width: 40vw;
-    height: 60vh;
+    width: 45vw;
+    height: 65vh;
     margin: 20px auto;
     padding: 0px 20px 20px 20px;
-    box-shadow: 3px 3px 7px black;
+    border: solid 3px black;
+    background-color: white;
+    box-shadow: 3px 3px 20px black;
     border-radius: 30px;
     z-index: 5;
 }
 
 .msg-title {
     font-size: 50px;
-    font-family: "Modak";
+    font-family: "Bowlby One SC";
     text-align: center;
     margin-bottom: 10px;
     padding: 10px;
@@ -85,10 +109,10 @@ canvas {
 
 .msgs-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     flex-wrap:nowrap;
     gap: 10px;
-    height: 30vh;
+    height: 35vh;
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -97,7 +121,7 @@ canvas {
     display: inline-block;
     align-self: flex-start;
     min-width: 200px;
-    padding: 15px 15px 25px 15px;
+    padding: 20px 20px 30px 20px;
     margin: 5px;
     color: white;
     font-size: 17px;
@@ -106,7 +130,7 @@ canvas {
     background-color: black;
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
     word-wrap: break-word; /* 긴 단어 있을 때 줄바꿈 처리 */
-    border-radius: 30px;
+    border-radius: 35px;
 }
 
 .msg-item:hover {
@@ -131,7 +155,7 @@ canvas {
 .msg-datetime {
     position: absolute;
     right: 20px;
-    margin: 5px;
+    margin: 7px;
     font-size: 10px;    
 }
 
