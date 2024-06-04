@@ -7,20 +7,29 @@
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script defer src="./js/msg.js"></script>
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Silkscreen:wght@400;700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
         </style>
     </head>
     <body>
+        <div class="cursorItem">
+            <span class="circle"></span>
+        </div>
         <div class="container">
             <div class="left-text">
                 <div class="left-upper">I'm just trying to</div>
                 <div class="left-bottom">remember what you said</div>
             </div>
+            <div class="menu-text">
+                <div class="menu-info">Information</div>
+                <div class="menu-guest">Guest Book</div>
+            </div>
             <canvas id="canvas" width="600" height="600"></canvas>
         </div>
         <div class="msg-container">
-            <div class="msg-title">Guest Book</div>
-            <div class="msgs-wrapper">
+            
+            <div class="msg-title" id="msg-components">Guest Book</div>
+            <div class="msg-close-btn" id="msg-components">X</div>
+            <div class="msgs-wrapper" id="msg-components">
                 <div class="msg-item">
                     길이가 다른
                     <button class="delete-btn">X</button>
@@ -41,8 +50,28 @@
                     <button class="delete-btn">X</button>
                     <div class="msg-datetime">2024-05-31 12-27-30</div>
                 </div>
+                <div class="msg-item">
+                    1234567890
+                    <button class="delete-btn">X</button>
+                    <div class="msg-datetime">2024-05-31 12-27-30</div>
+                </div>
+                <div class="msg-item">
+                    1234567890
+                    <button class="delete-btn">X</button>
+                    <div class="msg-datetime">2024-05-31 12-27-30</div>
+                </div>
+                <div class="msg-item">
+                    1234567890
+                    <button class="delete-btn">X</button>
+                    <div class="msg-datetime">2024-05-31 12-27-30</div>
+                </div>
+                <div class="msg-item">
+                    1234567890
+                    <button class="delete-btn">X</button>
+                    <div class="msg-datetime">2024-05-31 12-27-30</div>
+                </div>
             </div>
-            <input type="text" class="msg-input" placeholder="Add new message">
+            <input type="text" class="msg-input" placeholder="Add new message" id="msg-components">
         </div>
         <script type="importmap">
             {
@@ -54,6 +83,8 @@
             }
         </script>
         <script type="module" src="./js/model.js"></script>
+        <script src="./js/mousemove.js"></script>
+        <script src="./js/page_interaction.js"></script>
         <div>
 
         </div>

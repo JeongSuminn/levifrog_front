@@ -11,7 +11,7 @@ let renderer = new THREE.WebGLRenderer({
 
 renderer.outputEncoding = THREE.sRGBEncoding;
 let camera = new THREE.PerspectiveCamera(30, 1);
-camera.position.set(-1.7, 0, 2.5);  // 카메라 위치 설정
+camera.position.set( 0, 0, 3.5);  // 카메라 위치 설정
 
 // OrbitControls를 추가합니다.
 let controls = new OrbitControls(camera, renderer.domElement);
@@ -33,6 +33,9 @@ loader.load('model/model_levifrog.glb', function (gltf) {
 
     function animate(){
         requestAnimationFrame(animate);
+        
+        //gltf.scene.rotation.y += 0.01;
+
         controls.update(); // OrbitControls 업데이트를 추가합니다.
         renderer.render(scene, camera);
     }
