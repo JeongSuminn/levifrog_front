@@ -24,6 +24,17 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+.jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.noto-sans-kr {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
 
 .container {
     display: flex;
@@ -62,11 +73,32 @@ body {
     visibility: hidden;    
 }
 
+.upper-text {
+    font-size: 30px;
+    font-family: "Jersey 10";
+    animation: blink 2s infinite ease-in-out;
+}
+
 canvas {
     margin-top: -5vh;
     height: 80vh;
     width: auto;
     filter: opacity(0.9) grayscale(0.5);
+}
+
+.info-wrapper {
+    padding: 50px 60px 20px 20px;
+    font-family: "Noto Sans KR";
+}
+.info-title {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.info-content {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .menu-text {
@@ -236,4 +268,16 @@ canvas {
     opacity: 0.5;
     transition: all 0.3s ease-in-out;
     mix-blend-mode: difference;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

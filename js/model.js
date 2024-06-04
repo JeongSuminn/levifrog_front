@@ -31,6 +31,12 @@ loader.load('model/model_levifrog.glb', function (gltf) {
     dirLight.position.set(0, 5, 5);  // 위치 설정
     scene.add(dirLight);
 
+    // 마우스 이동 이벤트 추가
+    window.addEventListener('mousemove', (event) => {
+        let mouseX = event.clientX / window.innerHeight * 0.8 - 1; // -1에서 1 사이로 변환
+        gltf.scene.rotation.y = mouseX;
+    });
+
     function animate(){
         requestAnimationFrame(animate);
         
