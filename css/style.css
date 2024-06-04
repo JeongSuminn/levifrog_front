@@ -14,6 +14,9 @@ body {
     box-sizing: border-box;
     background-color: white;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .staatliches-regular {
@@ -23,7 +26,10 @@ body {
 }
 
 .container {
-    position: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
 }
@@ -57,29 +63,25 @@ body {
 }
 
 canvas {
-    position: absolute;
-    z-index: -1;
-    margin: 0;
-    left: 28vw;
-    bottom: 8vh;
-    height: calc(100vh - 30px);
+    margin-top: -5vh;
+    height: 80vh;
     width: auto;
     filter: opacity(0.9);
 }
 
 .menu-text {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    z-index: 6;
-    font-size: 100px;
+    justify-items: center;
+    font-size: 15px;
     font-family: "Staatliches";
     text-align: center;
-    margin-top: 25vh;
+    margin-top: 5vh;
     padding: 10px;
 }
 
 .menu-info {
-    margin-bottom: 7vh;
+    margin-right: 1vw;
 }
 .menu-info:hover {
     scale: 1.1;
@@ -91,31 +93,11 @@ canvas {
     color: #999999;
 }
 
-.cursorItem {
-    position: absolute;
-    top: 0; left: 0;
-    z-index: 10;
-    pointer-events: none;
-}
-.circle {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    background-color: black;
-    border-radius: 50%;
-    margin: -30px -30px;
-    opacity: 0.5;
-    transition: all 0.3s ease-in-out;
-    mix-blend-mode: difference;
-}
-
 .msg-container {
+    align-self: flex-end;
     --sh: 5vh;
     --sw: 15vw;
     box-sizing: border-box;
-    position: absolute;
-    bottom: 3vh;
-    right: 42vw;
     width: var(--sw);
     height: var(--sh);
     margin: 20px auto;
@@ -233,4 +215,22 @@ canvas {
 .msgs-wrapper::-webkit-scrollbar-track {
     background-color: #ddd;
     border-radius: 10px;
+}
+
+.cursorItem {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 10;
+    pointer-events: none;
+}
+.circle {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    margin: -30px -30px;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+    mix-blend-mode: difference;
 }

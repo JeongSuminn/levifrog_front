@@ -19,58 +19,64 @@
                 <div class="left-upper">I'm just trying to</div>
                 <div class="left-bottom">remember what you said</div>
             </div>
-            <div class="menu-text">
-                <div class="menu-info">Information</div>
-                <div class="menu-guest">Guest Book</div>
+            <!-- <div class="menu-text">
+                <span class="menu-info">Information</span>
+                <span class="menu-guest">Guest Book</span>
+            </div> -->
+            <div class="canvas-container">
+                <canvas id="canvas" width="600" height="600"></canvas>
             </div>
-            <canvas id="canvas" width="600" height="600"></canvas>
+            <div class="msg-container">
+                <span class="menu-text">
+                    <span class="menu-info" id="menu-text">Information</span>
+                    <span class="menu-guest" id="menu-text">Guest Book</span>
+                </span>
+                <div class="msg-title" id="msg-components">Guest Book</div>
+                <button class="msg-close-btn" id="msg-components">X</button>
+                <div class="msgs-wrapper" id="msg-components">
+                    <div class="msg-item">
+                        길이가 다른
+                        <button class="delete-btn">X</button>
+                        <div class="msg-datetime">2024-05-31 12-27-30</div>
+                    </div>
+                    <div class="msg-item">
+                        다양한 종류의 컨테이너들
+                        <button class="delete-btn">X</button>
+                        <div class="msg-datetime">2024-05-31 12-27-30</div>
+                    </div>
+                    <div class="msg-item">
+                        123
+                        <button class="delete-btn">X</button>
+                        <div class="msg-datetime">2024-05-31 12-27-30</div>
+                    </div>
+                    <div class="msg-item">
+                        1234567890
+                        <button class="delete-btn">X</button>
+                        <div class="msg-datetime">2024-05-31 12-27-30</div>
+                    </div>
+                    <div class="msg-item">
+                        1234567890
+                        <button class="delete-btn">X</button>
+                        <div class="msg-datetime">2024-05-31 12-27-30</div>
+                    </div>
+                    <div class="msg-item">
+                        1234567890
+                        <button class="delete-btn">X</button>
+                        <div class="msg-datetime">2024-05-31 12-27-30</div>
+                    </div>
+                    <div class="msg-item">
+                        1234567890
+                        <button class="delete-btn">X</button>
+                        <div class="msg-datetime">2024-05-31 12-27-30</div>
+                    </div>
+                    <div class="msg-item">
+                        1234567890
+                        <button class="delete-btn">X</button>
+                        <div class="msg-datetime">2024-05-31 12-27-30</div>
+                    </div>
+                </div>
         </div>
-        <div class="msg-container">
-            
-            <div class="msg-title" id="msg-components">Guest Book</div>
-            <div class="msg-close-btn" id="msg-components">X</div>
-            <div class="msgs-wrapper" id="msg-components">
-                <div class="msg-item">
-                    길이가 다른
-                    <button class="delete-btn">X</button>
-                    <div class="msg-datetime">2024-05-31 12-27-30</div>
-                </div>
-                <div class="msg-item">
-                    다양한 종류의 컨테이너들
-                    <button class="delete-btn">X</button>
-                    <div class="msg-datetime">2024-05-31 12-27-30</div>
-                </div>
-                <div class="msg-item">
-                    123
-                    <button class="delete-btn">X</button>
-                    <div class="msg-datetime">2024-05-31 12-27-30</div>
-                </div>
-                <div class="msg-item">
-                    1234567890
-                    <button class="delete-btn">X</button>
-                    <div class="msg-datetime">2024-05-31 12-27-30</div>
-                </div>
-                <div class="msg-item">
-                    1234567890
-                    <button class="delete-btn">X</button>
-                    <div class="msg-datetime">2024-05-31 12-27-30</div>
-                </div>
-                <div class="msg-item">
-                    1234567890
-                    <button class="delete-btn">X</button>
-                    <div class="msg-datetime">2024-05-31 12-27-30</div>
-                </div>
-                <div class="msg-item">
-                    1234567890
-                    <button class="delete-btn">X</button>
-                    <div class="msg-datetime">2024-05-31 12-27-30</div>
-                </div>
-                <div class="msg-item">
-                    1234567890
-                    <button class="delete-btn">X</button>
-                    <div class="msg-datetime">2024-05-31 12-27-30</div>
-                </div>
-            </div>
+        
             <input type="text" class="msg-input" placeholder="Add new message" id="msg-components">
         </div>
         <script type="importmap">
