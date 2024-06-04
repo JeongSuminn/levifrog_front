@@ -102,13 +102,12 @@ canvas {
     margin: 20px auto;
     border: solid 1px black;
     background-color: white;
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 3px 3px 5px black;
     border-radius: 30px;
-    z-index: 5;
     transition: .5s;
     transform-origin: bottom center; /* 수정된 부분 */
     position: absolute; /* 중앙에 고정하기 위해 position을 absolute로 변경 */
-    bottom: 0; /* 수정된 부분 */
+    bottom: 3vh; /* 수정된 부분 */
     left: 50%; /* 중앙에 위치하도록 left를 50%로 설정 */
     transform: translateX(-50%); /* 중앙에 위치하도록 transform 설정 */
 }

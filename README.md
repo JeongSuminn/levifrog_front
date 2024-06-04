@@ -1,6 +1,9 @@
 # levifrog_front
 Levi the frog의 frontend
 
-## Referece
+## Reference
+
+### Design inspired by 
+https://www.rayraylab.com/
 ### CSS reveal animation
 https://www.sitepoint.com/css-image-reveal-animation/
