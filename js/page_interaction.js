@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', function () {
     const msg_close_btn = document.querySelector('.msg-close-btn');
     const msg_components = document.querySelectorAll('#msg-components');
     const menu_text = document.querySelectorAll('#menu-text');
+    const canvas = document.querySelector('canvas');
 
     msg_components.forEach(element => {
         element.style.visibility = 'hidden';
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 element.style.display = 'none';
             });
         }, 500);
+        canvas.style.display = 'none';
     });
     msg_close_btn.addEventListener('click', function() {
         msg_container.classList.remove('clicked');
@@ -27,6 +29,7 @@ window.addEventListener('DOMContentLoaded', function () {
         });
         menu_text.forEach(element => {
             element.style.display = 'flex';
-        })
+        });
+        canvas.style.display = 'block';
     });
 });
