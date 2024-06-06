@@ -9,7 +9,7 @@ window.onload = () => {
 
     const cursorItem = document.querySelector(".cursorItem");
     const circle = cursorItem.querySelector(".circle");
-    const buttonAll = document.querySelectorAll(".menu-text,.delete-btn, .msg-input, .msg-close-btn, canvas");
+    const buttonAll = document.querySelectorAll(".menu-text,.delete-btn, .msg-input, .msg-close-btn, canvas, #link");
 
     buttonAll.forEach((item) => {
         item.addEventListener("mouseenter", () => {

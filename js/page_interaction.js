@@ -22,7 +22,9 @@ window.addEventListener('DOMContentLoaded', function () {
         canvas.style.display = 'none';
         upper_text.style.display = 'none';
         msg_close_btn.style.visibility = 'visible';
-        info_wrapper.style.display = 'block';
+        setTimeout(() => {
+            info_wrapper.style.display = 'block';
+        }, 300);
     });
 
     menu_guest.addEventListener('click', function() {
@@ -34,7 +36,7 @@ window.addEventListener('DOMContentLoaded', function () {
             msg_components.forEach(element => {
                 element.style.visibility = 'visible';
             });
-        }, 200);
+        }, 300);
         canvas.style.display = 'none';
         upper_text.style.display = 'none';
         info_wrapper.style.display = 'none';
